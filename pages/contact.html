@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GCT</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que votre feuille de style est correctement liée -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo1.jpg" alt="Logo GCT">
+                <h1>GCT</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <center><h2>Formulaire de contact</h2></center>
+        <form action="Formulaire.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Prénom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="button-container"></div>
+            <center>
+            <button type="submit">Envoyer</button>
+            <button type="reset">réinitialiser</button></center>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GCT. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Incluez votre script JavaScript si nécessaire -->
+</body>
+</html>
